@@ -4,26 +4,27 @@
 verde #49a09d
 lilas #5f2c82 */
 
-*{
+* {
     font-family: -apple-system, blinkmacsystemfont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", sans-serif;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     background-color: #5f2c82;
     height: 100vh;
     width: 100vh;
 }
 
-main{
+main {
     position: relative;
     height: 100vh;
     width: 100vw;
 }
 
-section#login{
+section#login {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -36,18 +37,21 @@ section#login{
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.247);
 
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
+
 
 }
 
-section#login div#imagem{
+section#login div#imagem {
     display: block;
     background: #5f2c82 url()no-repeat;
     background-size: cover;
-    bgposition: left bottom;
+    background-position: left bottom;
     height: 200px;
 }
 
-section#login > div#formulario{
+section#login>div#formulario {
     display: block;
     padding: 10px;
 }
